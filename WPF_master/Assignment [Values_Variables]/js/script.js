@@ -1,6 +1,7 @@
-// Defining Variables
+// Defining Variable Types: Numbers, Booleans, Strings
 
-var yearBorn = 1955; //Declaration is "var"  Definition is the value
-var age = 38;
-console.log(yearBorn);
-alert(yearBorn);
+var age = 38; //Number variable
+var isStudent = false;//Boolean - can be "true" or "false"
+var firstName = "Kermit"; //string variable
+
+//use of "\" indicates ignore next character and "\n" indicates new line
