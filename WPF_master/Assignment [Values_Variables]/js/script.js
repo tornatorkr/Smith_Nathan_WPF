@@ -1,7 +1,8 @@
-// Defining Variable Types: Numbers, Booleans, Strings
+// Arrays
 
-var age = 38; //Number variable
-var isStudent = false;//Boolean - can be "true" or "false"
-var firstName = "Kermit"; //string variable
+var muppetNames = ["Kermit", "Miss Piggy", "Fozzy"]; //array can contain strings and / or numbers, variables
+console.log(muppetNames[1]);//displays index of array - index number begins with "0"
 
-//use of "\" indicates ignore next character and "\n" indicates new line
+
+var num = 2; 
+console.log(muppetNames[num]); 
