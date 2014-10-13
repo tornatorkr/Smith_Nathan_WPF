@@ -6,4 +6,4 @@ var length;
 var width; 
 var height; 
 
-length = prompt("We are going to calculate volume based on the unit of an orange.\n Please enter the length in orange units.");
+length = prompt("We are going to calculate volume based on the unit of an orange.\nPlease enter the length in orange units.");
