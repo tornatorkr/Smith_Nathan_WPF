@@ -6,5 +6,12 @@
 
 var price; 
 var mpg;
-var distance; 
+var distance;
+var cost; 
+
 price = prompt("I will calculate the amount that you spend on gasoline in a week's time.\nPlease enter the current price of gas per gallon.");
+mpg = prompt("Please enter your vehicle's average mpg.");
+distance = prompt("Please enter the distance traveled this week in miles.");
+
+cost = distance / mpg * price; //*algorythm*/
+console.log("You have spent $"+cost + " on gasoline this week.");//prints result to console
