@@ -1,6 +1,6 @@
 // Conditional Loggic
 
-var oldEnough = true;//Boolean
+var oldEnough = false;//Boolean
 
 //If child is old enough, print to console, "you can ride!"
 if(oldEnough){
