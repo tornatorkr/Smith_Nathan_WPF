@@ -1,9 +1,9 @@
 // Conditional Loggic
 
-var oldEnough = false;//Boolean
+var kidheight = prompt("Plaese enter your height in inches.");//Relational Expressions
 
 //If child is old enough, print to console, "you can ride!"
-if(oldEnough){
+if(kidheight > 48){
 	//code performed if condition is met or true
 	console.log("You can ride the coaster!");
 }else{
