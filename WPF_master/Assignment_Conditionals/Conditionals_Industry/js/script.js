@@ -1,24 +1,25 @@
-// Nathan Smith - Oct. 12, 2014 - Assignment: Expressions - Industry Calulator
-//This calculator will determine a call center representative's projected call volume for the month
-//input required will be: call center agent's first and last name; average calls per day; number of dropped or unresolved calls, days worked per month
+// Nathan Smith - Oct. 19, 2014 - Assignment: Conditionals - Industry Calulator
+//This calculator will determine if a call center representative will receive a bonus for the month
+//input required will be: call center representative's call volume and quality rating
 
-var firstName; 
-var lastName;
-var ein;//Employee Identification Number
-var averageCallsDaily;
-var droppedCalls; 
-var daysWorked;
-var projectedVolume; 
+var callVolumeMin = 500; 
+var callQualMin = 95;
+ 
 
-firstName = prompt("I will calculate your projected number of completed calls for the month.\nPlease enter your first name.");
-lastName = prompt("Please enter your last name.");
-ein = prompt("Please enter your 5-digit Employee Identification Number.");
-averageCallsDaily = prompt("Please enter the average number of received calls per day.");
-droppedCalls = prompt("Please enter the average number of dropped or unresolved calls per day.");
-daysWorked = prompt("Please enter the number of working days for this month.");
+var repCallVolume = prompt("Let's see if you qualify for a bonus this month.\nPlease enter your call volume for the month.");
+if(repCallVolume == " " || repCallVolume <= 0){
+	var repCallVolChk = prompt("I didn't get that.\nPlease enter your call volume for the month in whole numbers greater than zero.");
+	
+	repCallVolume = repCallVolChk;
+	
+}//checks input
 
-var fullName = [firstName, lastName, ein];//array 
+var repCallQual = prompt("Please enter your your call quality rating as a whole percentage.");
+if(repCallQual == " " || repCallQual <= 0){
+	var repCallQualChk = prompt("I didn't get that.\nPlease enter your call quality percentage for the month in whole numbers greater than zero.");
+	
+	repCallQual = repCallQualChk;
+	
+}//checks input
 
-projectedVolume = (averageCallsDaily - droppedCalls) * daysWorked;//algorithm
 
-console.log("Employee "+fullName[2] + " "+fullName[1] + ", " + fullName[0] +": " + "you're projected call volume this month is " + projectedVolume + " calls.");
