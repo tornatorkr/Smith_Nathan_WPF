@@ -6,7 +6,7 @@
 
 var grossPay = prompt("Let's calculate your take home pay for the week.\nPlease enter your gross pay for the week.");
 
-if(grossPay = " "){
+if(grossPay == " "){
 	grossPay = prompt("I didn't get that. I was expecting a dollar amount.\nPlease enter your gross pay in dollars.");//checks for input
 }
 
