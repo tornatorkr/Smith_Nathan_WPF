@@ -5,11 +5,11 @@
 //Declaration and assignment
 
 var grossPay = prompt("Let's calculate your take home pay for the week.\nPlease enter your gross pay for the week.");
-var avgTax;
-var addWithhold;
+var avgTax = prompt("Please enter your tax rate percentage in whole numbers.");
+var addWithhold = prompt("Please enter any additional withholding in whole dollars.");
 var takeHomePay; 
 
 
 
-takeHomePay = grossPay * avgTax - addWithhold; //*algorithm*/
+takeHomePay = grossPay - grossPay * avgTax - addWithhold; //*algorithm*/
 console.log("Your net pay for the week is: $"+takeHomePay);//prints result to console
