@@ -1,4 +1,4 @@
-// Conditional Loggic
+// Conditional Logic
 
 var kidheight = prompt("Plaese enter your height in inches.");//Relational Expressions
 
