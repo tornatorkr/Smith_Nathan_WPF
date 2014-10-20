@@ -18,7 +18,13 @@ function calcArea(){
 	
 	var length = 20;
 	var width = 30;
-	var area = width * height;
+	var area = length * width;
 	console.log(area);
 	
 }
+
+//Execution, Invoking or Calling a Function (Function Call):
+// functionName();
+
+calcArea();
+outputMsg();
