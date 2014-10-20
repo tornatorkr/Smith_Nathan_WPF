@@ -40,4 +40,22 @@ if(citrus == " " || citrus == 0){
 var produce = (citrus == "Y") ? "Let's have some fruit!" : "Looks like your eating bananas and tomatoes!";
 console.log(produce);
 
+var fruitA = "blood oranges";
+var fruitB = "lemons"; 
+var fruitC = "kiwis";
+
+if(colorA === "red" || colorA === "orange"){
+	console.log(fruitA);
+	
+}else if(colorA == "yellow"){
+	console.log(fruitB);
+	
+	
+}else{
+	console.log(fruitC);
+	
+}//compares and prints to console result from first color input
+
+
+
 
