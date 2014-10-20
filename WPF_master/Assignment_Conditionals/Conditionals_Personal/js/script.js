@@ -6,8 +6,9 @@
 
 var grossPay = prompt("Let's calculate your take home pay for the week.\nPlease enter your gross pay for the week.");
 
-if(grossPay == " "){
-	grossPay = prompt("I didn't get that. I was expecting a dollar amount.\nPlease enter your gross pay in dollars.");//checks for input
+if(grossPay == " " || grossPay == 0){
+	var grossPaychk = prompt("I didn't get that. I was expecting a dollar amount.\nPlease enter your gross pay in dollars.");
+	grossPay = grossPaychk;//checks for input
 }
 
 var avgTax = prompt("Please enter your tax rate as a decimal \(i.e. 30% as .30\).");
