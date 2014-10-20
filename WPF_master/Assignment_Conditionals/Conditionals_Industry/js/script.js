@@ -23,3 +23,10 @@ if(repCallQual == " " || repCallQual <= 0){
 }//checks input
 
 
+if(repCallVolume >= callVolumeMin && repCallQual >= callQualMin){
+	console.log("Congratulations! You qualify for a bonus this month!");
+	
+}else{
+	console.log("Sorry, no bonus this month.");
+	
+}
