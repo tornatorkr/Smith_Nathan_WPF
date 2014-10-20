@@ -29,4 +29,4 @@ if(repCallVolume >= callVolumeMin && repCallQual >= callQualMin){
 }else{
 	console.log("Sorry, no bonus this month.");
 	
-}
+}//compares input values to min values - if both conditions are true then there is a bonus.
