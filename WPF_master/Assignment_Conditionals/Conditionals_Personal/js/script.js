@@ -5,7 +5,7 @@
 //Declaration and assignment
 
 var grossPay = prompt("Let's calculate your take home pay for the week.\nPlease enter your gross pay for the week.");
-var avgTax = prompt("Please enter your tax rate percentage in whole numbers.");
+var avgTax = prompt("Please enter your tax rate as a decimal \(i.e. 30% as .30\).");
 var addWithhold = prompt("Please enter any additional withholding in whole dollars.");
 var takeHomePay; 
 
