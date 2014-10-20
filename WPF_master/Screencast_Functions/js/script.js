@@ -1,12 +1,24 @@
-// Conditional Logic
+// Functions - Basic Structure
 
-var kidheight = prompt("Plaese enter your height in inches.");//Relational Expressions
+/* function functionName(){
+	
+	code to be executed
+	
+}
 
-//If child is old enough, print to console, "you can ride!"
-if(kidheight > 48){
-	//code performed if condition is met or true
-	console.log("You can ride the coaster!");
-}else{
-	console.log("No soup for you!");
+*/
+
+function outputMsg(){
+	
+	console.log("Hello World!");	
+	
+}
+
+function calcArea(){
+	
+	var length = 20;
+	var width = 30;
+	var area = width * height;
+	console.log(area);
 	
 }
