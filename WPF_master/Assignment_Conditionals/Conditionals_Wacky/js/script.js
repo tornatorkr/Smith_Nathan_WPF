@@ -1,6 +1,6 @@
 // Nathan Smith - Oct. 19, 2014 - Assignment: Conditionals - Wacky Calulator
 //This "wacky calculator" will demonstrate a calculation utilizing else if and ternary operators
-//input required will be standard ROYGBIV colors to choose fruit to eat
+//input required will be standard ROYGBIV colors as a basis to choose fruit to eat
 
 var length; 
 var width; 
