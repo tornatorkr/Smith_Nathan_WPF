@@ -68,6 +68,18 @@ if(colorB === "red" || colorB === "orange"){
 	
 }//compares and prints to console result from second color input
 
+if(colorC === "red" || colorC === "orange"){
+	console.log(fruitA);
+	
+}else if(colorC == "yellow"){
+	console.log(fruitB);
+	
+	
+}else{
+	console.log(fruitC);
+	
+}//compares and prints to console result from third color input
+
 
 
 
