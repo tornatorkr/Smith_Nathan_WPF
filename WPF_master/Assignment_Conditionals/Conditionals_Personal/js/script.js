@@ -12,10 +12,14 @@ if(grossPay == " " || grossPay == 0){
 }
 
 var avgTax = prompt("Please enter your tax rate as a decimal \(i.e. 30% as .30\).");
+
+if(avgTax >= 1){
+	var avgTaxchk = prompt("I didn't get that. I was expecting a decimal figure.\nPlease enter your tax rate as a decimal figure.");
+	avgTax = avgTaxchk;//checks for input
+}
+
 var addWithhold = prompt("Please enter any additional withholding in whole dollars.");
-var takeHomePay; 
 
 
-
-takeHomePay = grossPay - grossPay * avgTax - addWithhold; //*algorithm*/
+var takeHomePay = grossPay - grossPay * avgTax - addWithhold; //*algorithm*/
 console.log("Your net pay for the week is: $"+takeHomePay);//prints result to console
