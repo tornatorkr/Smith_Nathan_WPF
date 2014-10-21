@@ -30,3 +30,16 @@ calcArea();
 outputMsg();
 
 //Variable Scope - variables declared inside a function with the same name as a variable declared outside of the function will take on the value assigned inside the funtion, separate from outside
+
+//Parameters and Arguements
+// calculate dog years using a function
+
+function dogYears(age){
+	
+	var dogYears = age * 7;
+	console.log("Sparky is " + dogYears + " years old.");
+}
+
+var age = prompt("Please enter age in human years.");
+
+dogYears(age);
