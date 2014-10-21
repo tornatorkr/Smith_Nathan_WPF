@@ -34,7 +34,7 @@ outputMsg();
 //Parameters and Arguements
 // calculate dog years using a function
 
-function dogYears(age){
+function dogYears(age){//parameter is always in funtion definition (stores)
 	
 	var dogYears = age * 7;
 	console.log("Sparky is " + dogYears + " years old.");
@@ -42,4 +42,17 @@ function dogYears(age){
 
 var age = prompt("Please enter age in human years.");//prompts user for input parameter - scope is outside of function to be put into function by the function call
 
-dogYears(age);//function call
+dogYears(age);//function call - parenthesis holds "arguements" to send into the function parameter
+
+// Functions - Returning Values
+
+var total = calcAreaR(30, 30);// function call - "total" stores the returned value from the funtion
+console.log(total);//demonstrates that values are sent to function, returned and printed out
+function calcAreaR(w, h){
+	
+	var area = w * h;
+	return area;// returns or spits out result of function to calcAreaR() and is stored in "total"
+
+}
+
+//console.log(total);
