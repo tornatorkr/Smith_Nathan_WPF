@@ -38,8 +38,8 @@ function dogYears(age){
 	
 	var dogYears = age * 7;
 	console.log("Sparky is " + dogYears + " years old.");
-}
+}// function defined: age to be input
 
-var age = prompt("Please enter age in human years.");
+var age = prompt("Please enter age in human years.");//prompts user for input parameter - scope is outside of function to be put into function by the function call
 
-dogYears(age);
+dogYears(age);//function call
