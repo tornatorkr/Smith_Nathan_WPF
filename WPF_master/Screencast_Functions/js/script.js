@@ -58,3 +58,28 @@ function calcAreaR(w, h){
 //console.log(total);
 
 //subroutines that return values are called Functions and subroutines that do not return values are called Procedures
+
+//Anonymous Functions
+
+
+/*var functionName = function(){
+	code to run
+	
+}
+
+function() -- invoking
+*/
+
+
+//function must be defined before invoking with anonymous funtions
+
+var calcAreaS = function(width, height){
+	
+	var area = width * height;
+	return area;
+	
+}
+
+var a = calcAreaS(30, 40);
+console.log(a);
+
