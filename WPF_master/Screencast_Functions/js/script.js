@@ -56,3 +56,5 @@ function calcAreaR(w, h){
 }
 
 //console.log(total);
+
+//subroutines that return values are called Functions and subroutines that do not return values are called Procedures
