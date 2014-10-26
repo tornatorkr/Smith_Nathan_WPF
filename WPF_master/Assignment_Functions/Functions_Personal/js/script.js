@@ -45,7 +45,7 @@ if(dispIncome === 0){
 	
 }else if(dispIncome < 0 && savingsM == 0){
 	
-	console.log("You have a defecit of" + dispIncome + " dollars for this month.\nLooks like you'll be borrowing money from Peter to pay Paul.");
+	console.log("You have a defecit of" + dispIncome + " dollars for this month.\nLooks like you'll be \"borrowing money from Peter to pay Paul.\"");
 	
 }else if(dispIncome > 0 && dispIncome <= 10){
 	
