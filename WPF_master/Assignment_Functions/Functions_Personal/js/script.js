@@ -18,15 +18,27 @@ if(rentOrMort == " " || rentOrMort == 0){
 	rentOrMort = rentOrMortChk;//checks for input
 }
 
-var UtilExpn = prompt("Please enter your total monthly expenses for utilities, cell phone, cable, Internet, groceries and other household expenses in dollars.");
+var utilExpn = prompt("Please enter your total monthly expenses for utilities, cell phone, cable, Internet, groceries and other household expenses in dollars.");
 
-if(UtilExpn == " " || UtilExpn == 0){
-	var UtilExpnChk = prompt("I didn't get that. I was expecting a dollar.\nPlease enter your total expenses in dollars.");
+if(utilExpn == " " || utilExpn == 0){
+	var utilExpnChk = prompt("I didn't get that. I was expecting a dollar.\nPlease enter your total expenses in dollars.");
 	UtilExpn = UtilExpnChk;//checks for input
 }
 
 var savingsM = prompt("Please enter monthly amount set aside for savings in whole dollars.");
 
 
-var takeHomePay = grossPay - grossPay * avgTax - addWithhold; //*algorithm*/
-console.log("Your net pay for the week is: $"+takeHomePay);//prints result to console
+
+var invest = (savingsM == " " || savingsM == 0) ? "Saving is wise financial planning!" : "You should consider setting aside some money for savings in next month's buget! ";//ternary
+console.log(invest);
+
+
+var dispIncome = excessIncome(takeHomeM, renOrMort, utilExpn, savingsM); //function call -- returned value is stored in "dispIncome"
+
+function excessIncome(p, m, u, s){
+	
+	var result = p - m - u - s;
+	return result;
+	
+	
+}
