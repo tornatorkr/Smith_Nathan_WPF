@@ -74,7 +74,7 @@ if(callAccur === "Y"){
 	
 }else{
 	
-	callRsrc = 0;
+	callAccur = 0;
 	
 }
 
