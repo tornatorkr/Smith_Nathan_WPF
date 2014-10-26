@@ -36,15 +36,16 @@ if(numberD == " " || numberD == 0){
 }//checks input
 
 var quadN = multiCalc(numberA, numberB, numberC, numberD); //function call -- returned value is stored in "quadN"
-console.log("You're result is: " + quadN + " unit\(s\).");
+console.log("\(" + numberA + " " + "- " + numberB +"\) divided by " + "\(" + numberC + " " + "x " + numberD + " + 1" + "\)\n");
+console.log("Your result is: " + quadN + " unit\(s\).");
 
 
 function multiCalc(a, b, c, d){
 	
-	var result = (a-b) / (c-d);
+	var result = (a-b) / (c * d + 1); 
 	return result;
 	
-}
+}//wacky algorithm!
 
 
 
