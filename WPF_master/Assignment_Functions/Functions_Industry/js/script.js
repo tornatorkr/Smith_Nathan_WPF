@@ -88,4 +88,4 @@ var calcQual = function(g, s, r , a){//anonymous function
 var callRate = calcQual(callGreet, callSpell, callRsrc, callAccur);//funtion call
 
 
-console.log("The individual call quality rating is " + "%.");
+console.log("The individual call quality rating is " + callRate + "%.");
