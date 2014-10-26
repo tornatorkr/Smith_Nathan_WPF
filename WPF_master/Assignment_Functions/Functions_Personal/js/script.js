@@ -11,14 +11,21 @@ if(takeHomeM == " " || takeHomeM == 0){
 	takeHomeM = takeHomeChk;//checks for input
 }
 
-var rentOrMort = prompt("Please enter your tax rate as a decimal \(i.e. 30% as .30\).");
+var rentOrMort = prompt("Please enter your monthly rent or mortgage payment in dollars.");
 
-if(avgTax >= 1){
-	var avgTaxchk = prompt("I didn't get that. I was expecting a decimal figure.\nPlease enter your tax rate as a decimal figure.");
-	avgTax = avgTaxchk;//checks for input
+if(rentOrMort == " " || rentOrMort == 0){
+	var avgTaxchk = prompt("I didn't get that. I was expecting a dollar.\nPlease enter your monthly payment in dollars.");
+	rentOrMort = rentOrMortChk;//checks for input
 }
 
-var addWithhold = prompt("Please enter any additional withholding in whole dollars.");
+var UtilExpn = prompt("Please enter your total monthly expenses for utilities, cell phone, cable, Internet, groceries and other household expenses in dollars.");
+
+if(UtilExpn == " " || UtilExpn == 0){
+	var UtilExpnChk = prompt("I didn't get that. I was expecting a dollar.\nPlease enter your total expenses in dollars.");
+	UtilExpn = UtilExpnChk;//checks for input
+}
+
+var savingsM = prompt("Please enter monthly amount set aside for savings in whole dollars.");
 
 
 var takeHomePay = grossPay - grossPay * avgTax - addWithhold; //*algorithm*/
