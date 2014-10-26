@@ -45,7 +45,7 @@ function multiCalc(a, b, c, d){
 	var result = (a-b) / (c * d + 1); 
 	return result;
 	
-}//wacky algorithm!
+}//wacky algorithm! ?
 
 
 
