@@ -36,7 +36,7 @@ if(numberD == " " || numberD == 0){
 }//checks input
 
 var quadN = multiCalc(numberA, numberB, numberC, numberD); //function call -- returned value is stored in "quadN"
-console.log("You're result is: " + quadN + " units.");
+console.log("You're result is: " + quadN + " unit\(s\).");
 
 
 function multiCalc(a, b, c, d){
