@@ -1,84 +1,52 @@
-// Nathan Smith - Oct. 19, 2014 - Assignment: Conditionals - Wacky Calulator
-//This "wacky calculator" will demonstrate a calculation utilizing else if and ternary operators
-//input required will be standard ROYGBIV colors as a basis to choose fruit to eat
+// Nathan Smith - Oct. 19, 2014 - Assignment: Functions - Wacky Calulator
+//This "wacky calculator" will demonstrate a calculation utilizing a function
+//input required will be numerical answers to questions
 
-var length; 
-var width; 
-var height; 
 
-var colorA = prompt("What is your favorite color of the rainbow?\nPlease enter: red, orange, yellow, green, blue, indigo or violet.");
-if(colorA == " " || colorA == 0){
-	var colorAchk = prompt("I didn't get that.\nPlease enter your color choice.");
+
+var numberA = prompt("Please enter any random number not equal to zero.");
+if(numberA == " " || numberA == 0){
+	var numberAchk = prompt("I didn't get that.\nPlease enter any random number not equal to zero.");
 	
-	colorA = colorAchk;
+	numberA = numberAchk;
 	
 }//checks input
-var colorB = prompt("Please enter your second favorite color of the rainbow.");
-if(colorB == " " || colorB == 0){
-	var colorBchk = prompt("I didn't get that.\nPlease enter your color choice.");
+var numberB = prompt("Please enter a second random number not equal to zero.");
+if(numberB == " " || numberB == 0){
+	var numberBchk = prompt("I didn't get that.\nPlease enter any random number not equal to zero.");
 	
-	colorB = colorBchk;
+	numberB = numberBchk;
 	
 }//checks input
 
-var colorC = prompt("Please enter your third favorite color of the rainbow.");
-if(colorC == " " || colorC == 0){
-	var colorCchk = prompt("I didn't get that.\nPlease enter your color choice.");
+var numberC = prompt("Please enter a third random number not equal to zero.");
+if(numberC == " " || numberC == 0){
+	var numberCchk = prompt("I didn't get that.\nPlease enter any random number not equal to zero.");
 	
-	colorC = colorCchk;
-	
-}//checks input
-
-var citrus = prompt("Do you like citrus fruit? Y/N");
-if(citrus == " " || citrus == 0){
-	var citrusChk = prompt("I didn't get that.\nPlease enter \"Y\" or \"N\".");
-	
-	citrus = citrusChk;
+	numberC = numberCchk;
 	
 }//checks input
 
-var produce = (citrus == "Y") ? "Let's have some citrus fruit!" : "Sorry, only citrus fruit is available.  Here are your choices: ";
-console.log(produce);
+var numberD = prompt("Please enter a fourth random number not equal to zero.");
+if(numberD == " " || numberD == 0){
+	var numberDChk = prompt("I didn't get that.\nPlease enter any random number not equal to zero.");
+	
+	numberD = numberDChk;
+	
+}//checks input
 
-var fruitA = "blood oranges";
-var fruitB = "lemons"; 
-var fruitC = "kiwis";
+var quadN = multiCalc(numberA, numberB, numberC, numberD); //function call -- returned value is stored in "quadN"
+console.log("You're result is: " + quadN + " units.");
 
-if(colorA === "red" || colorA === "orange"){
-	console.log(fruitA);
-	
-}else if(colorA == "yellow"){
-	console.log(fruitB);
-	
-	
-}else{
-	console.log(fruitC);
-	
-}//compares and prints to console result from first color input
 
-if(colorB === "red" || colorB === "orange"){
-	console.log(fruitA);
+function multiCalc(a, b, c, d){
 	
-}else if(colorB == "yellow"){
-	console.log(fruitB);
+	var result = (a-b) / (c-d);
+	return result;
 	
-	
-}else{
-	console.log(fruitC);
-	
-}//compares and prints to console result from second color input
+}
 
-if(colorC === "red" || colorC === "orange"){
-	console.log(fruitA);
-	
-}else if(colorC == "yellow"){
-	console.log(fruitB);
-	
-	
-}else{
-	console.log(fruitC);
-	
-}//compares and prints to console result from third color input
+
 
 
 
