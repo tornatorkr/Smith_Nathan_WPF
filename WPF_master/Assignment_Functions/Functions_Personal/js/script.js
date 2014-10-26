@@ -29,15 +29,23 @@ var savingsM = prompt("Please enter monthly amount set aside for savings in whol
 
 
 
-var invest = (savingsM == " " || savingsM == 0) ? "Saving is wise financial planning!" : "You should consider setting aside some money for savings in next month's buget! ";//ternary
+var invest = (savingsM > 0) ? "Saving is wise financial planning!" : "You should consider setting aside some money for savings in next month's buget! ";//ternary
 console.log(invest);
 
 
 var dispIncome = excessIncome(takeHomeM, rentOrMort, utilExpn, savingsM); //function call -- returned value is stored in "dispIncome"
 
-if(dispIncome < 0 && savingsM > 0){
+if(dispIncome === 0){
 	
-	console.log("You have no excess income this month - Looks like you may need to borrow money from savings to meet expenses!");
+	console.log("You have no excess income this month.\nTry cutting some expenses for next month.");
+	
+}else if(dispIncome < 0 && savingsM > 0){
+	
+	console.log("You have a defecit of" + dispIncome + " dollars for this month.\nLooks like you may need to borrow money from savings to meet expenses!");
+	
+}else if(dispIncome < 0 && savingsM == 0){
+	
+	console.log("You have a defecit of" + dispIncome + " dollars for this month.\nLooks like you'll be borrowing money from Peter to pay Paul.");
 	
 }else if(dispIncome > 0 && dispIncome <= 10){
 	
