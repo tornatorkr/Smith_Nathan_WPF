@@ -43,7 +43,7 @@ if(callSpell === "Y"){
 
 
 var callRsrc = prompt("Did agent utilize available resources as necessary? \(Y or N?\)");
-if(callSpell == " " || callSpell == 0){
+if(callRsrc == " " || callRsrc == 0){
 	var callRsrcChk = prompt("I didn't get that.\nPlease enter \(Y or N?\)");
 	
 	callRsrc = callRsrcChk;
@@ -62,7 +62,7 @@ if(callRsrc === "Y"){
 
 var callAccur = prompt("Did agent provide accurate information? \(Y or N?\)");
 if(callAccur == " " || callAccur == 0){
-	var callRsrcChk = prompt("I didn't get that.\nPlease enter \(Y or N?\)");
+	var callAccurChk = prompt("I didn't get that.\nPlease enter \(Y or N?\)");
 	
 	callAccur = callAccurChk;
 	
