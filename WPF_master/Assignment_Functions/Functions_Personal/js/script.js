@@ -33,12 +33,27 @@ var invest = (savingsM == " " || savingsM == 0) ? "Saving is wise financial plan
 console.log(invest);
 
 
-var dispIncome = excessIncome(takeHomeM, renOrMort, utilExpn, savingsM); //function call -- returned value is stored in "dispIncome"
+var dispIncome = excessIncome(takeHomeM, rentOrMort, utilExpn, savingsM); //function call -- returned value is stored in "dispIncome"
+
+if(dispIncome < 0 && savingsM > 0){
+	
+	console.log("You have no excess income this month - Looks like you may need to borrow money from savings to meet expenses!");
+	
+}else if(dispIncome > 0 && dispIncome <= 10){
+	
+	console.log("You have $" + dispIncome + " left over this month.\nHave a slice or two of pizza and watch some NetFlix \(if you've already paid for it\).");
+	
+}else{
+	
+	console.log("You have $" + dispIncome + " free and clear! Don't spend it all in one place!");
+	
+	
+}
 
 function excessIncome(p, m, u, s){
 	
 	var result = p - m - u - s;
-	return result;
+	return result;//"result" is returned to function excessIncome and stored in dispIncome
 	
 	
 }
