@@ -14,14 +14,14 @@ if(takeHomeM == " " || takeHomeM == 0){
 var rentOrMort = prompt("Please enter your monthly rent or mortgage payment in dollars.");
 
 if(rentOrMort == " " || rentOrMort == 0){
-	var avgTaxchk = prompt("I didn't get that. I was expecting a dollar.\nPlease enter your monthly payment in dollars.");
+	var avgTaxchk = prompt("I didn't get that. I was expecting a dollar amount.\nPlease enter your monthly payment in dollars.");
 	rentOrMort = rentOrMortChk;//checks for input
 }
 
 var utilExpn = prompt("Please enter your total monthly expenses for utilities, cell phone, cable, Internet, groceries and other household expenses in dollars.");
 
 if(utilExpn == " " || utilExpn == 0){
-	var utilExpnChk = prompt("I didn't get that. I was expecting a dollar.\nPlease enter your total expenses in dollars.");
+	var utilExpnChk = prompt("I didn't get that. I was expecting a dollar amount.\nPlease enter your total expenses in dollars.");
 	UtilExpn = UtilExpnChk;//checks for input
 }
 
