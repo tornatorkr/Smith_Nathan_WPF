@@ -1,27 +1,44 @@
-// Nathan Smith - Oct. 19, 2014 - Assignment: Conditionals - Industry Calulator
-//This calculator will determine if a call center representative will receive a bonus for the month
-//input required will be: call center representative's call volume and quality rating
+// Nathan Smith - Oct. 26, 2014 - Assignment: Functions - Industry Calulator
+//This calculator will determine the call quality rating of an individual call
+//input required will be: "Y" or "N" responses to required call content
 
 var callVolumeMin = 500; 
 var callQualMin = 95;
  
 
-var repCallVolume = prompt("Let's see if you qualify for a bonus this month.\nPlease enter your call volume for the month.");
-if(repCallVolume == " " || repCallVolume <= 0){
-	var repCallVolChk = prompt("I didn't get that.\nPlease enter your call volume for the month in whole numbers greater than zero.");
+var callGreet = prompt("Let's calculate the quality rating for an agent's call.\nPlease respond with \"Y\" or \"N\" to the following questions.\nDid agent use approved Greeting and Closing Scripts? \(Y or N?\)");
+if(callGreet == " " || repCallVolume == 0){
+	var callGreetChk = prompt("I didn't get that.\nPlease enter \(Y or N?\)");
 	
-	repCallVolume = repCallVolChk;
-	
-}//checks input
-
-var repCallQual = prompt("Please enter your your call quality rating as a whole percentage.");
-if(repCallQual == " " || repCallQual <= 0){
-	var repCallQualChk = prompt("I didn't get that.\nPlease enter your call quality percentage for the month in whole numbers greater than zero.");
-	
-	repCallQual = repCallQualChk;
+	callGreet = callGreetChk;
 	
 }//checks input
 
+var callSpell = prompt("Did agent confirm the spelling of the client's first and last name? \(Y or N?\)");
+if(callSpell == " " || callSpell == 0){
+	var repCallQualChk = prompt("I didn't get that.\nPlease enter \(Y or N?\)");
+	
+	callSpell = callSpellChk;
+	
+}//checks input
+
+
+
+var callRsrc = prompt("Did agent utilize available resources as necessary? \(Y or N?\)");
+if(callSpell == " " || callSpell == 0){
+	var callRsrcChk = prompt("I didn't get that.\nPlease enter \(Y or N?\)");
+	
+	callRsrc = callRsrcChk;
+	
+}//checks input
+
+var callAccur = prompt("Did agent provide accurate information? \(Y or N?\)");
+if(callAccur == " " || callAccur == 0){
+	var callRsrcChk = prompt("I didn't get that.\nPlease enter \(Y or N?\)");
+	
+	callAccur = callAccurChk;
+	
+}//checks input
 
 if(repCallVolume >= callVolumeMin && repCallQual >= callQualMin){
 	console.log("Congratulations! You qualify for a bonus this month!");
