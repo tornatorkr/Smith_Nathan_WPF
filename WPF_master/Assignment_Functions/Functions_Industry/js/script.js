@@ -24,7 +24,7 @@ if(callGreet === "Y"){
 
 var callSpell = prompt("Did agent confirm the spelling of the client's first and last name? \(Y or N?\)");
 if(callSpell == " " || callSpell == 0){
-	var repCallQualChk = prompt("I didn't get that.\nPlease enter \(Y or N?\)");
+	var callSpellChk = prompt("I didn't get that.\nPlease enter \(Y or N?\)");
 	
 	callSpell = callSpellChk;
 	
